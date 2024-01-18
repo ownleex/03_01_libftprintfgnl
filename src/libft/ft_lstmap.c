@@ -6,7 +6,7 @@
 /*   By: ayarmaya <ayarmaya@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 17:05:37 by ayarmaya          #+#    #+#             */
-/*   Updated: 2024/01/18 05:09:00 by ayarmaya         ###   ########.fr       */
+/*   Updated: 2024/01/18 06:15:39 by ayarmaya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,14 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	return (newlst);
 }
 
+/*
 void	*double_content(void *content)
 {
-	int *new_content = malloc(sizeof(int));
+	int	*new_content = malloc(sizeof(int));
+
 	if (new_content)
 		*new_content = *(int *)content * 2;
-	return new_content;
+	return (new_content);
 }
 
 void	del_content(void *content)
@@ -60,7 +62,6 @@ void	print_list(t_list *lst)
 	}
 }
 
-/*
 int	main()
 {
 	t_list	*lst;
