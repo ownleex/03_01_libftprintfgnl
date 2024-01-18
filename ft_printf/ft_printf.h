@@ -6,7 +6,7 @@
 /*   By: ayarmaya <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 15:02:09 by ayarmaya          #+#    #+#             */
-/*   Updated: 2023/12/19 22:47:15 by ayarmaya         ###   ########.fr       */
+/*   Updated: 2024/01/18 03:44:26 by ayarmaya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define FT_PRINTF_H
 
 # include <stdarg.h>
-# include "./libft/libft.h"
+# include "../libft.h"
 
 int		ft_printf(const char *input, ...);
 int		ft_printstr(char *str);

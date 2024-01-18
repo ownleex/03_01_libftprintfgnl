@@ -6,11 +6,12 @@
 /*   By: ayarmaya <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 16:23:05 by ayarmaya          #+#    #+#             */
-/*   Updated: 2023/11/28 15:14:32 by ayarmaya         ###   ########.fr       */
+/*   Updated: 2024/01/18 01:50:49 by ayarmaya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*#include "../ft_printf.h"*/
 
 t_list	*ft_lstlast(t_list *lst)
 {
@@ -35,7 +36,7 @@ int     main(void)
 	new_lst2 = ft_lstnew("first");
 	ft_lstadd_front(&lst, new_lst);
 	ft_lstadd_front(&lst, new_lst2);
-	printf("le dernier element est %s\n", (char *)ft_lstlast(lst)->content);
+	ft_printf("le dernier element est %s\n", (char *)ft_lstlast(lst)->content);
 	return (0);
 }
 */
