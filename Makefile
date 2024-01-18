@@ -6,7 +6,7 @@
 #    By: ayarmaya <ayarmaya@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/10 01:58:16 by ayarmaya          #+#    #+#              #
-#    Updated: 2024/01/18 05:08:04 by ayarmaya         ###   ########.fr        #
+#    Updated: 2024/01/18 05:14:12 by ayarmaya         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,9 +66,7 @@ SRC		=	src/libft/ft_bzero \
 
 SRCS		=	$(addsuffix .c, ${SRC})
 
-OBJS_MAND	=	$(SRCS:.c=.o)
-
-OBJS		=	$(OBJS_MAND)
+OBJS		=	$(SRCS:.c=.o)
 
 CC		=	gcc
 
