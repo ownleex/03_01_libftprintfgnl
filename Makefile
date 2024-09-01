@@ -6,7 +6,7 @@
 #    By: ayarmaya <ayarmaya@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/10 01:58:16 by ayarmaya          #+#    #+#              #
-#    Updated: 2024/08/16 23:50:11 by ayarmaya         ###   ########.fr        #
+#    Updated: 2024/09/01 21:22:20 by ayarmaya         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,7 @@ SRC		=	src/libft/ft_bzero \
 			src/libft/ft_strchr \
 			src/libft/ft_strrchr \
 			src/libft/ft_strncmp \
+			src/libft/ft_strcmp \
 			src/libft/ft_memchr \
 			src/libft/ft_memcmp \
 			src/libft/ft_strnstr \
