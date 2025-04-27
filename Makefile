@@ -6,7 +6,7 @@
 #    By: ayarmaya <ayarmaya@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/10 01:58:16 by ayarmaya          #+#    #+#              #
-#    Updated: 2024/09/01 21:22:20 by ayarmaya         ###   ########.fr        #
+#    Updated: 2025/04/27 18:52:42 by ayarmaya         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -78,17 +78,22 @@ RM		= 	rm -f
 
 AR		= 	ar crs
 
-all:		$(NAME)
+%.o: %.c
+	$(CC) $(CFLAGS) -MMD -MP -c $< -o $@
 
-$(NAME): 	$(OBJS)
-			$(AR) $(NAME) $(OBJS)
+all: $(NAME)
+
+$(NAME): $(OBJS)
+	$(AR) $(NAME) $(OBJS)
 
 clean:
-			$(RM) $(OBJS)
+	$(RM) $(OBJS) $(OBJS:.o=.d)  # Supprime les .o ET les .d
 
-fclean:		clean
-			$(RM) $(NAME)
+fclean: clean
+	$(RM) $(NAME)
 
-re:		fclean all
+re: fclean all
 
-.PHONY:	all clean fclean re
+-include $(OBJS:.o=.d)
+
+.PHONY: all clean fclean re
